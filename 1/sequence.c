@@ -1,11 +1,28 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include "sequence.h"
 
-char *bool_to_string(bool val);
+int main()
+{
+    char str[MAXLENGTH];
+    int i = 0;
+    char c;
 
-void print_string(char str[]);
+    printf("Please enter some text: ");
+    while (i < MAXLENGTH && EOF != (c = getchar()))
+    {
+        str[i] = c;
+        ++i;
+    }
+    str[i] = EOF;
 
-void f_sequence(char str[]) {
+    f_sequence(str);
+
+    return 0;
+}
+
+void f_sequence(char str[])
+{
     bool increasing = 1;
     bool non_decreasing = 1;
 
@@ -16,23 +33,29 @@ void f_sequence(char str[]) {
     char prev = str[0];
     int i = 1;
 
-    while (EOF != (current = str[i++])) {
-        if (!(prev < current)) {
+    while (EOF != (current = str[i++]))
+    {
+        if (!(prev < current))
+        {
             increasing = false;
         }
-        if (!(prev <= current)) {
+        if (!(prev <= current))
+        {
             non_decreasing = false;
         }
-        if (!(prev > current)) {
+        if (!(prev > current))
+        {
             decreasing = false;
         }
-        if (!(prev >= current)) {
+        if (!(prev >= current))
+        {
             non_increasing = false;
         }
 
         prev = current;
     }
 
+    printf("\n");
     printf("your input is: ");
     print_string(str);
     printf("increasing: %s\n", bool_to_string(increasing));
@@ -41,15 +64,18 @@ void f_sequence(char str[]) {
     printf("non_increasing: %s\n", bool_to_string(non_increasing));
 }
 
-char *bool_to_string(bool val) {
+char *bool_to_string(bool val)
+{
     return val ? "true" : "false";
 }
 
-void print_string(char str[]) {
+void print_string(char str[])
+{
     int i = 0;
     char c;
 
-    while (EOF != (c = str[i++])) {
+    while (EOF != (c = str[i++]))
+    {
         printf("%c", c);
     }
 

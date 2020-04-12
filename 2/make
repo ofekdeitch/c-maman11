@@ -1,2 +1,0 @@
-main: main.o pattern_finder.o
-    gcc -o main -Wall -ansi -pedantic main.o pattern_finder.o
