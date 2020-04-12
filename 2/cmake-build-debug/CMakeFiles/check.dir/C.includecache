@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/Ofek/ubuntu/shared/maman11/2/main.c
+stdio.h
+-
+pattern_finder.h
+/cygdrive/d/Ofek/ubuntu/shared/maman11/2/pattern_finder.h
+
+/cygdrive/d/Ofek/ubuntu/shared/maman11/2/pattern_finder.c
+stdio.h
+-
+
+/cygdrive/d/Ofek/ubuntu/shared/maman11/2/pattern_finder.h
+

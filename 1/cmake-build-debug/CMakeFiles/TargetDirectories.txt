@@ -1,0 +1,3 @@
+/cygdrive/d/Ofek/ubuntu/shared/maman11/2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/d/Ofek/ubuntu/shared/maman11/2/cmake-build-debug/CMakeFiles/check.dir
+/cygdrive/d/Ofek/ubuntu/shared/maman11/2/cmake-build-debug/CMakeFiles/edit_cache.dir
